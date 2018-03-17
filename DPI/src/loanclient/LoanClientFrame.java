@@ -39,8 +39,6 @@ public class LoanClientFrame extends JFrame {
 	private JLabel lblNewLabel_1;
 	private JTextField tfTime;
 
-	private Destination thisDest;
-
 	/**
 	 * Create the frame.
 	 */
@@ -119,7 +117,6 @@ public class LoanClientFrame extends JFrame {
 				
 				LoanRequest request = new LoanRequest(ssn,amount,time);
 				listModel.addElement( new RequestReply<LoanRequest,LoanReply>(request, null));
-				thisDest = Communicator.getTemporaryQueue("LoanRequest");
 
 				Communicator.Request("LoanRequest", "LoanRequest", request, new MessageListener() {
 					@Override
@@ -133,8 +130,6 @@ public class LoanClientFrame extends JFrame {
 						}
 					}
 				});
-
-				awaitReply(request, thisDest);
 			}
 		});
 		GridBagConstraints gbc_btnQueue = new GridBagConstraints();
@@ -187,14 +182,5 @@ public class LoanClientFrame extends JFrame {
 				}
 			}
 		});
-	}
-
-	public void awaitReply(LoanRequest request, Destination replyDestination) {
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		;
 	}
 }

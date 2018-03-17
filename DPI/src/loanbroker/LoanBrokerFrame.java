@@ -152,31 +152,4 @@ public class LoanBrokerFrame extends JFrame {
         });
     }
 
-//    public void awaitReplyFromBank(LoanRequest request, Destination listenDestination, Destination replyDestination) {
-//        try {
-//            Thread.sleep(500);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        Communicator.SetupReceiver("BankInterestReply", listenDestination, new MessageListener() {
-//
-//            @Override
-//            public void onMessage(Message msg) {
-//                try {
-//                    ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) msg;
-//                    BankInterestReply bankRp = (BankInterestReply) msgObject.getObject();
-//
-//                    add(request, bankRp);
-//
-//                    Communicator.SendObject("LoanReply ", replyDestination, bankRp, null);
-//
-//
-//                } catch (JMSException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
-//    }
-
-
 }

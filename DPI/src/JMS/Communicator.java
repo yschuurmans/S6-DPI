@@ -109,44 +109,6 @@ public class Communicator {
 
     }
 
-//    public static Destination SetupReceiver(String channel, MessageListener listener) {
-//        Connection connection; // to connect to the JMS
-//        Session session; // session for creating consumers
-//
-//        Destination receiveDestination; //reference to a queue/topic destination
-//        MessageConsumer consumer = null; // for receiving messages
-//
-//        try {
-//            Properties props = new Properties();
-//            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-//                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-//            props.setProperty(Context.PROVIDER_URL, "tcp://localhost:61616");
-//
-//            // connect to the Destination called “myFirstChannel”
-//            // queue or topic: “queue.myFirstDestination” or “topic.myFirstDestination”
-//            props.put(("queue." + channel), channel);
-//
-//            Context jndiContext = new InitialContext(props);
-//            ActiveMQConnectionFactory connectionFactory = (ActiveMQConnectionFactory) jndiContext
-//                    .lookup("ConnectionFactory");
-//            connectionFactory.setTrustAllPackages(true);
-//            connection = connectionFactory.createConnection();
-//            session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-//
-//            // connect to the receiver destination
-//            consumer = session.createConsumer(destination);
-//
-//            connection.start(); // this is needed to start receiving messages
-//
-//        } catch (NamingException | JMSException e) {
-//            e.printStackTrace();
-//        }
-//
-//
-//        CreateListener(listener, consumer);
-//
-//    }
-
     private static void CreateListener(MessageListener listener, MessageConsumer consumer) {
         try {
             if (listener != null)
