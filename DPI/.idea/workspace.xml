@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="JMSBankFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="111" column="106" lean-forward="false" selection-start-line="111" selection-start-column="106" selection-end-line="111" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestReply.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/messaging/requestreply/RequestReply.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankInterestRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankInterestReply.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestReply.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanReply.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/loan/LoanReply.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/loan/LoanRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-190">
+              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanClientFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/loanclient/LoanClientFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding>
+                <element signature="e#959#996#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Communicator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JMS/Communicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6681#6682#0" expanded="true" />
+                <element signature="e#6775#6776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/Session.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanBrokerFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="138" column="82" lean-forward="true" selection-start-line="138" selection-start-column="82" selection-end-line="138" selection-end-column="82" />
+              <folding>
+                <element signature="e#844#855#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list</find>
+      <find>button</find>
+      <find>channel</find>
+      <find>receiveDestinationreceiveDestination</find>
+      <find>destination</find>
+      <find>myFirstDestinationmyFirstDestination</find>
+      <find>awaitReplyFromBankawaitReplyFromBank</find>
+      <find>awaitReply</find>
+      <find>props</find>
+      <find>session</find>
+      <find>create</find>
+      <find>createcons</find>
+      <find>listenerlistener</find>
+      <find>consumer</find>
+      <find>connection.start</find>
+    </findStrings>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/application forms/loan broker/loanbroker/JListLine.java" />
+        <option value="$PROJECT_DIR$/src/application forms/loan client/loanclient/LoanClientFrame.java" />
+        <option value="$PROJECT_DIR$/src/application forms/abn amro/bank/JMSBankFrame.java" />
+        <option value="$PROJECT_DIR$/src/mix/model/bank/BankInterestReply.java" />
+        <option value="$PROJECT_DIR$/src/application forms/abn_amro/bank/JMSBankFrame.java" />
+        <option value="$PROJECT_DIR$/src/model/loan/LoanRequest.java" />
+        <option value="$PROJECT_DIR$/src/model/bank/BankInterestReply.java" />
+        <option value="$PROJECT_DIR$/src/model/loan/LoanReply.java" />
+        <option value="$PROJECT_DIR$/src/model/bank/BankInterestRequest.java" />
+        <option value="$PROJECT_DIR$/src/loanclient/LoanClientFrame.java" />
+        <option value="$PROJECT_DIR$/src/bank/JMSBankFrame.java" />
+        <option value="$PROJECT_DIR$/src/JMS/Communicator.java" />
+        <option value="$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="loanbroker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="loanclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="requestreply" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="loan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DPI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JEA/voorbeelden/ESW-JSF-Demo1" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Stack\School\DPI\DPI\src" />
+      <recent name="E:\Stack\School\DPI\DPI\src\application forms\loan_client" />
+      <recent name="E:\Stack\School\DPI\DPI\src\application forms\loan_broker" />
+      <recent name="E:\Stack\School\DPI\DPI\src\application forms\abn_amro" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Stack\School\DPI\DPI\src" />
+      <recent name="E:\Stack\School\DPI\DPI" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.JMSBankFrame">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    </configuration>
+    <configuration name="JMSBankFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="bank.JMSBankFrame" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DPI" />
+      <envs />
+    </configuration>
+    <configuration name="LoanBrokerFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="loanbroker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="loanbroker.LoanBrokerFrame" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DPI" />
+      <envs />
+    </configuration>
+    <configuration name="LoanClientFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="loanclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="loanclient.LoanClientFrame" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DPI" />
+      <envs />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DPI" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LoanClientFrame" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LoanBrokerFrame" />
+      <item index="3" class="java.lang.String" itemvalue="Application.JMSBankFrame" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.JMSBankFrame" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LoanBrokerFrame" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LoanClientFrame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1520861661940" duration="759000" />
+      <workItem from="1520862584533" duration="9314000" />
+      <workItem from="1521014277901" duration="705000" />
+      <workItem from="1521316567289" duration="5827000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17907000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13125" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26511136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bank/JMSBankFrame.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/loanclient/LoanClientFrame.java</url>
+          <line>192</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="124" column="24" lean-forward="false" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/jndi/ReadOnlyContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2898">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding>
+            <marker date="1517212330000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1517212330000" expanded="false" signature="148:884" ph="..." />
+            <marker date="1517212330000" expanded="true" signature="1487:1655" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="1699:1993" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="2075:2882" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="2972:3064" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="3134:3311" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="3421:3502" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="3528:3539" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="3558:3564" ph=" }" />
+            <marker date="1517212330000" expanded="false" signature="3588:3599" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="3618:3624" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="3723:5417" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="5461:5472" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="5501:5507" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="5600:5663" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="5742:5801" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="5883:5940" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="6003:8656" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="8717:8769" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="8836:8877" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="8954:9057" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="9140:9287" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="9359:9644" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="9724:10024" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10089:10145" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10215:10265" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10343:10401" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10470:10529" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10600:10659" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10708:10715" ph="{}" />
+            <marker date="1517212330000" expanded="true" signature="10787:10846" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10920:10979" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11049:11108" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11180:11239" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11303:11347" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11419:11454" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11528:11563" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11634:11693" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11766:11825" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11901:11960" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12040:12099" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12158:12217" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12278:12337" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12427:12773" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="12461:12476" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="12488:12498" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="12552:12602" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12640:12767" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12856:13222" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="12883:12898" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="12910:12920" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="12974:13024" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="13062:13216" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="13303:13821" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="13380:13395" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="13456:13466" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="13524:13572" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="13614:13629" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="13653:13663" ph=" }" />
+            <marker date="1517212330000" expanded="false" signature="13698:13713" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="13741:13751" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="13804:13815" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messaging/requestreply/RequestReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/loan/LoanReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/loan/LoanRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/JListLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanclient/LoanClientFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="e#959#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JMS/Communicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1602">
+          <caret line="89" column="54" lean-forward="false" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6681#6682#0" expanded="true" />
+            <element signature="e#6775#6776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2196">
+          <caret line="146" column="21" lean-forward="false" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+          <folding>
+            <element signature="e#844#855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/application_fo/LoanClientFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/loanclient/LoanClientFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/JListLine.java" />
+    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java" />
+    <entry file="file://$PROJECT_DIR$/application_forms/abn amro/bank/JMSBankFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/application forms/abn_amro/bank/JMSBankFrame.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/jndi/ReadOnlyContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2898">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding>
+            <marker date="1517212330000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1517212330000" expanded="false" signature="148:884" ph="..." />
+            <marker date="1517212330000" expanded="true" signature="1487:1655" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="1699:1993" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="2075:2882" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="2972:3064" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="3134:3311" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="3421:3502" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="3528:3539" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="3558:3564" ph=" }" />
+            <marker date="1517212330000" expanded="false" signature="3588:3599" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="3618:3624" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="3723:5417" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="5461:5472" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="5501:5507" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="5600:5663" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="5742:5801" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="5883:5940" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="6003:8656" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="8717:8769" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="8836:8877" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="8954:9057" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="9140:9287" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="9359:9644" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="9724:10024" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10089:10145" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10215:10265" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10343:10401" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10470:10529" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10600:10659" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10708:10715" ph="{}" />
+            <marker date="1517212330000" expanded="true" signature="10787:10846" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="10920:10979" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11049:11108" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11180:11239" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11303:11347" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11419:11454" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11528:11563" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11634:11693" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11766:11825" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="11901:11960" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12040:12099" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12158:12217" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12278:12337" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12427:12773" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="12461:12476" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="12488:12498" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="12552:12602" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12640:12767" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="12856:13222" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="12883:12898" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="12910:12920" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="12974:13024" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="13062:13216" ph="{...}" />
+            <marker date="1517212330000" expanded="true" signature="13303:13821" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="13380:13395" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="13456:13466" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="13524:13572" ph="{...}" />
+            <marker date="1517212330000" expanded="false" signature="13614:13629" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="13653:13663" ph=" }" />
+            <marker date="1517212330000" expanded="false" signature="13698:13713" ph=" { " />
+            <marker date="1517212330000" expanded="false" signature="13741:13751" ph=" }" />
+            <marker date="1517212330000" expanded="true" signature="13804:13815" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/JListLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/loan/LoanReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/loan/LoanRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messaging/requestreply/RequestReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="111" column="106" lean-forward="false" selection-start-line="111" selection-start-column="106" selection-end-line="111" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JMS/Communicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6681#6682#0" expanded="true" />
+            <element signature="e#6775#6776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanclient/LoanClientFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <element signature="e#959#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="138" column="82" lean-forward="true" selection-start-line="138" selection-start-column="82" selection-end-line="138" selection-end-column="82" />
+          <folding>
+            <element signature="e#844#855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DPI</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>activemq-all-5.15.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
