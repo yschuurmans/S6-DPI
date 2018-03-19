@@ -5,10 +5,6 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 
-import javax.jms.Destination;
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageListener;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JList;
@@ -16,11 +12,10 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 
-import JMS.Communicator;
+import Gateway.LoanBrokerApplicationGateway;
 import model.bank.*;
 import model.loan.LoanReply;
 import model.loan.LoanRequest;
-import org.apache.activemq.command.ActiveMQObjectMessage;
 
 
 public class LoanBrokerFrame extends JFrame {
@@ -28,11 +23,14 @@ public class LoanBrokerFrame extends JFrame {
     /**
      *
      */
+
+
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
     private DefaultListModel<JListLine> listModel = new DefaultListModel<JListLine>();
     private JList<JListLine> list;
     private static boolean isRunning = false;
+    LoanBrokerApplicationGateway appGateway;
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -115,41 +113,24 @@ public class LoanBrokerFrame extends JFrame {
     }
 
     public void setupConnection() {
-        isRunning = true;
-        Communicator.SetupReceiver("LoanRequest", "LoanRequest", new MessageListener() {
+        appGateway = new LoanBrokerApplicationGateway() {
+            @Override
+            public BankInterestRequest onLoanRequestReceieved(LoanRequest loanRq) {
+                add(loanRq);
+                BankInterestRequest bankIntRq = new BankInterestRequest(loanRq.getAmount(), loanRq.getTime());
+                add(loanRq, bankIntRq);
+                return bankIntRq;
+            }
 
             @Override
-            public void onMessage(Message msg) {
-                try {
-                    ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) msg;
-                    LoanRequest loanRq = (LoanRequest) msgObject.getObject();
-                    Destination replyTo = msg.getJMSReplyTo();
-                    add(loanRq);
-                    BankInterestRequest bankIntRq = new BankInterestRequest(loanRq.getAmount(), loanRq.getTime());
-                    add(loanRq, bankIntRq);
-                    Communicator.Request("BankInterestRequest", "BankInterestRequest", bankIntRq, new MessageListener() {
-
-                        @Override
-                        public void onMessage(Message msg) {
-                            try {
-                                ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) msg;
-                                BankInterestReply bankRp = (BankInterestReply) msgObject.getObject();
-                                LoanReply loanReply = new LoanReply(bankRp.getInterest(),bankRp.getQuoteId());
-                                add(loanRq, bankRp);
-                                Communicator.Reply("LoanReply",replyTo,loanReply);
-
-
-                            } catch (JMSException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    });
-
-                } catch (JMSException e) {
-                    e.printStackTrace();
-                }
+            public LoanReply onBankInterestReply(LoanRequest loanRq, BankInterestReply bankRp) {
+                LoanReply loanReply = new LoanReply(bankRp.getInterest(),bankRp.getQuoteId());
+                add(loanRq,bankRp);
+                return loanReply;
             }
-        });
+        };
+
+        appGateway.listenForLoanRequests();
     }
 
 }

@@ -6,9 +6,6 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageListener;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -19,10 +16,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import JMS.Communicator;
+import Gateway.LoanBankApplicationGateway;
 import model.bank.*;
 import messaging.requestreply.RequestReply;
-import org.apache.activemq.command.ActiveMQObjectMessage;
 
 public class JMSBankFrame extends JFrame {
 
@@ -34,6 +30,8 @@ public class JMSBankFrame extends JFrame {
 	private JTextField tfReply;
 	private DefaultListModel<RequestReply<BankInterestRequest, BankInterestReply>> listModel = new DefaultListModel<RequestReply<BankInterestRequest, BankInterestReply>>();
 	private static boolean isRunning = false;
+
+	LoanBankApplicationGateway appGateway;
 	
 	/**
 	 * Launch the application.
@@ -56,7 +54,7 @@ public class JMSBankFrame extends JFrame {
 	 */
 	public JMSBankFrame() {
 		if(!isRunning) setupConnection();
-		setTitle("JMS Bank - ABN AMRO");
+		setTitle("Gateway Bank - ABN AMRO");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -109,7 +107,7 @@ public class JMSBankFrame extends JFrame {
 					rr.setReply(reply);
 	                list.repaint();
 
-	                Communicator.Reply("BankInterestReply", rr.getRequest().getReplyDestination(), reply);
+					appGateway.replyLoanRequest(rr);
 				}
 			}
 		});
@@ -122,21 +120,15 @@ public class JMSBankFrame extends JFrame {
 
 	public void setupConnection() {
 		isRunning =true;
-		Communicator.SetupReceiver("BankInterestRequest","BankInterestRequest", new MessageListener() {
 
+		appGateway = new LoanBankApplicationGateway() {
 			@Override
-			public void onMessage(Message msg) {
-				try {
-					ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) msg;
-					BankInterestRequest bankIntRq = (BankInterestRequest)msgObject.getObject();
-					bankIntRq.setReplyDestination(msg.getJMSReplyTo());
-					listModel.addElement(new RequestReply<>(bankIntRq, null));
-
-				} catch (JMSException e) {
-					e.printStackTrace();
-				}
+			public void onBankInterestRequestReceived(BankInterestRequest bankRq) {
+				System.out.println(bankRq);
+				listModel.addElement(new RequestReply<>(bankRq, null));
 			}
-		});
+		};
+
 	}
 
 }

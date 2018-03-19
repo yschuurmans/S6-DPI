@@ -6,7 +6,6 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.jms.*;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,11 +16,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import JMS.Communicator;
+import Gateway.LoanClientApplicationGateway;
 import messaging.requestreply.RequestReply;
-import model.bank.BankInterestRequest;
 import model.loan.*;
-import org.apache.activemq.command.ActiveMQObjectMessage;
 
 public class LoanClientFrame extends JFrame {
 
@@ -118,18 +115,17 @@ public class LoanClientFrame extends JFrame {
 				LoanRequest request = new LoanRequest(ssn,amount,time);
 				listModel.addElement( new RequestReply<LoanRequest,LoanReply>(request, null));
 
-				Communicator.Request("LoanRequest", "LoanRequest", request, new MessageListener() {
+				LoanClientApplicationGateway appGateway = new LoanClientApplicationGateway() {
 					@Override
-					public void onMessage(Message msg) {
-						try {
-							ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) msg;
-							LoanReply loanRp = (LoanReply) msgObject.getObject();
-							getRequestReply(request).setReply(loanRp);
-						} catch (JMSException e) {
-							e.printStackTrace();
-						}
+					public void onLoanReply(LoanRequest loanRq, LoanReply loanRp) {
+						getRequestReply(loanRq).setReply(loanRp);
+						System.out.println(loanRp);
 					}
-				});
+				};
+
+				appGateway.ApplyForLoan(request);
+
+
 			}
 		});
 		GridBagConstraints gbc_btnQueue = new GridBagConstraints();
