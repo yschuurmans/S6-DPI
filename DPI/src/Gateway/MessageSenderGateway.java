@@ -23,21 +23,16 @@ public class MessageSenderGateway {
 //
 //    Destination replyTo;
 
-    public MessageSenderGateway(String channel, Destination destination) {
+    public MessageSenderGateway(String channel) {
         this.channel = channel;
-        this.destination = destination;
+        this.destination = JNDILookup(channel);
     }
 
-    public MessageSenderGateway(String channel, String destinationString) {
-        this.channel = channel;
-        this.destination = JNDILookup(destinationString, channel);
+    public void send(Serializable message) {
+        send(message, null);
     }
 
-    public MessageReceiverGateway send(Serializable message) {
-        return send(message, null);
-    }
-
-    public MessageReceiverGateway send(Serializable message, MessageReceiverGateway customReceiver) {
+    public void send(Serializable message, String correlationID) {
         MessageReceiverGateway receiever = new MessageReceiverGateway();
         try {
             Properties props = new Properties();
@@ -58,25 +53,22 @@ public class MessageSenderGateway {
             // create a text message
             Message msg = session.createObjectMessage(message);
 
-            if (customReceiver == null) {
+            if (false){//customReceiver == null) {
                 receiever.setConnection(connection);
                 receiever.setSession(session);
                 receiever.setReceiveDestination(session.createTemporaryQueue());
                 msg.setJMSReplyTo(receiever.getReceiveDestination());
                 producer.send(msg);
-                return receiever;
             } else {
-                msg.setJMSReplyTo(customReceiver.getReceiveDestination());
+                msg.setJMSCorrelationID(correlationID);
                 producer.send(msg);
-                return customReceiver;
             }
         } catch (NamingException | JMSException e) {
             e.printStackTrace();
         }
-        return null;
     }
 
-    public static Destination JNDILookup(String destinationName, String channel) {
+    public static Destination JNDILookup(String channel) {
         Properties props = new Properties();
         props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
                 "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
@@ -85,7 +77,7 @@ public class MessageSenderGateway {
 
         try {
             Context jndiContext = new InitialContext(props);
-            return (Destination) jndiContext.lookup(destinationName);
+            return (Destination) jndiContext.lookup(channel);
         } catch (NamingException e) {
             e.printStackTrace();
         }

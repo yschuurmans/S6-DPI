@@ -1,6 +1,7 @@
 package Gateway;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.activemq.memory.list.MessageList;
 
 import javax.jms.*;
 import javax.naming.Context;
@@ -11,7 +12,6 @@ import java.util.Properties;
 public class MessageReceiverGateway {
 
     private String channel;
-    private String thisDestinationString;
 
     private Connection connection; // to connect to the Gateway
     private Session session; // session for creating consumers
@@ -19,25 +19,22 @@ public class MessageReceiverGateway {
     private Destination receiveDestination; //reference to a queue/topic destination
     private MessageConsumer consumer = null; // for receiving messages
 
-    public MessageReceiverGateway(String channel, String thisDestinationString) {
+    public MessageReceiverGateway(String channel) {
         this.channel = channel;
-        this.thisDestinationString = thisDestinationString;
     }
 
     public MessageReceiverGateway() {
     }
 
-    public void AwaitReply(MessageListener listener) {
-        try {
-            connection.start();
-            consumer = session.createConsumer(receiveDestination);
-            CreateListener(listener, consumer, 1);
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
+    public void awaitReply(MessageListener listener) {
+        startConnection(1, listener);
     }
 
     public void startConnection(MessageListener listener) {
+        startConnection(0, listener);
+    }
+
+    public void startConnection(int expectedReplyCount, MessageListener listener) {
 
         try {
             Properties props = new Properties();
@@ -57,7 +54,7 @@ public class MessageReceiverGateway {
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
             // connect to the receiver destination
-            receiveDestination = (Destination) jndiContext.lookup(thisDestinationString);
+            receiveDestination = (Destination) jndiContext.lookup(channel);
             consumer = session.createConsumer(receiveDestination);
 
             connection.start(); // this is needed to start receiving messages
@@ -66,7 +63,7 @@ public class MessageReceiverGateway {
             e.printStackTrace();
         }
 
-        CreateListener(listener, consumer, 0);
+        CreateListener(listener, consumer, expectedReplyCount);
 
     }
 
@@ -75,12 +72,13 @@ public class MessageReceiverGateway {
             if (listener != null)
                 consumer.setMessageListener(new MessageListener() {
                     private int replyCount;
+
                     @Override
                     public void onMessage(Message message) {
                         try {
                             listener.onMessage(message);
                             replyCount++;
-                            if (expectedReplyCount>0&& replyCount >= expectedReplyCount)
+                            if (expectedReplyCount > 0 && replyCount >= expectedReplyCount)
                                 consumer.close();
                         } catch (JMSException e) {
                             e.printStackTrace();
@@ -90,12 +88,13 @@ public class MessageReceiverGateway {
             else {
                 consumer.setMessageListener(new MessageListener() {
                     private int replyCount;
+
                     @Override
                     public void onMessage(Message msg) {
                         try {
                             System.out.println("received message: " + msg);
                             replyCount++;
-                            if (expectedReplyCount>0&& replyCount >= expectedReplyCount)
+                            if (expectedReplyCount > 0 && replyCount >= expectedReplyCount)
                                 consumer.close();
                         } catch (JMSException e) {
                             e.printStackTrace();
@@ -116,14 +115,6 @@ public class MessageReceiverGateway {
 
     public void setChannel(String channel) {
         this.channel = channel;
-    }
-
-    public String getThisDestinationString() {
-        return thisDestinationString;
-    }
-
-    public void setThisDestinationString(String thisDestinationString) {
-        this.thisDestinationString = thisDestinationString;
     }
 
     public Connection getConnection() {

@@ -12,6 +12,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DPI$JMSBankFrame.coverage" NAME="JMSBankFrame Coverage Results" MODIFIED="1522073662599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>bank.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -57,27 +62,77 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47040498">
+    <splitter split-orientation="horizontal" split-proportion="0.48847353">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="JMSBankFrame.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="385">
+                  <caret line="125" column="36" lean-forward="false" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#4291#4292#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="LoanBankApplicationGateway.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBankApplicationGateway.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+                <state relative-caret-position="360">
+                  <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MessageSenderGateway.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ActiveMQMessage.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/command/ActiveMQMessage.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#4321#4322#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Message.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/command/Message.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#10066#10067#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BankInterestRequest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestRequest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#943#944#0" expanded="true" />
+                    <element signature="e#982#983#0" expanded="true" />
+                    <element signature="e#1102#1103#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MessageSenderGateway.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="630">
-                  <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+                  <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
                   <folding>
-                    <element signature="e#905#906#0" expanded="true" />
-                    <element signature="e#947#948#0" expanded="true" />
+                    <element signature="e#688#689#0" expanded="true" />
+                    <element signature="e#723#724#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -86,24 +141,37 @@
           <file leaf-file-name="LoanBrokerApplicationGateway.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBrokerApplicationGateway.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="44" column="51" lean-forward="true" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+                <state relative-caret-position="569">
+                  <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1324#1325#0" expanded="true" />
-                    <element signature="e#1351#1352#0" expanded="true" />
-                    <element signature="e#2350#2351#0" expanded="true" />
-                    <element signature="e#2377#2378#0" expanded="true" />
+                    <element signature="e#1338#1339#0" expanded="true" />
+                    <element signature="e#1365#1366#0" expanded="true" />
+                    <element signature="e#2464#2465#0" expanded="true" />
+                    <element signature="e#2491#2492#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LoanClientApplicationGateway.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="RequestReply.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/messaging/requestreply/RequestReply.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="335">
+                  <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#713#714#0" expanded="true" />
+                    <element signature="e#734#735#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoanClientApplicationGateway.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Gateway/LoanClientApplicationGateway.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+                <state relative-caret-position="414">
+                  <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -116,32 +184,46 @@
           <file leaf-file-name="MessageReceiverGateway.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="26" />
+                <state relative-caret-position="612">
+                  <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
                   <folding>
-                    <element signature="e#4164#4165#0" expanded="true" />
-                    <element signature="e#4194#4195#0" expanded="true" />
-                    <element signature="e#4240#4241#0" expanded="true" />
-                    <element signature="e#4278#4279#0" expanded="true" />
-                    <element signature="e#4326#4327#0" expanded="true" />
-                    <element signature="e#4370#4371#0" expanded="true" />
-                    <element signature="e#4551#4552#0" expanded="true" />
-                    <element signature="e#4584#4585#0" expanded="true" />
-                    <element signature="e#4640#4641#0" expanded="true" />
-                    <element signature="e#4684#4685#0" expanded="true" />
-                    <element signature="e#4719#4720#0" expanded="true" />
-                    <element signature="e#4749#4750#0" expanded="true" />
-                    <element signature="e#4796#4797#0" expanded="true" />
-                    <element signature="e#4834#4835#0" expanded="true" />
-                    <element signature="e#4884#4885#0" expanded="true" />
-                    <element signature="e#4925#4926#0" expanded="true" />
-                    <element signature="e#4998#4999#0" expanded="true" />
-                    <element signature="e#5058#5059#0" expanded="true" />
-                    <element signature="e#5102#5103#0" expanded="true" />
-                    <element signature="e#5133#5134#0" expanded="true" />
-                    <element signature="e#5190#5191#0" expanded="true" />
-                    <element signature="e#5230#5231#0" expanded="true" />
+                    <element signature="e#680#681#0" expanded="true" />
+                    <element signature="e#718#719#0" expanded="true" />
+                    <element signature="e#819#820#0" expanded="true" />
+                    <element signature="e#863#864#0" expanded="true" />
+                    <element signature="e#924#925#0" expanded="true" />
+                    <element signature="e#968#969#0" expanded="true" />
+                    <element signature="e#4020#4021#0" expanded="true" />
+                    <element signature="e#4050#4051#0" expanded="true" />
+                    <element signature="e#4096#4097#0" expanded="true" />
+                    <element signature="e#4134#4135#0" expanded="true" />
+                    <element signature="e#4175#4176#0" expanded="true" />
+                    <element signature="e#4208#4209#0" expanded="true" />
+                    <element signature="e#4264#4265#0" expanded="true" />
+                    <element signature="e#4308#4309#0" expanded="true" />
+                    <element signature="e#4343#4344#0" expanded="true" />
+                    <element signature="e#4373#4374#0" expanded="true" />
+                    <element signature="e#4420#4421#0" expanded="true" />
+                    <element signature="e#4458#4459#0" expanded="true" />
+                    <element signature="e#4508#4509#0" expanded="true" />
+                    <element signature="e#4549#4550#0" expanded="true" />
+                    <element signature="e#4622#4623#0" expanded="true" />
+                    <element signature="e#4682#4683#0" expanded="true" />
+                    <element signature="e#4726#4727#0" expanded="true" />
+                    <element signature="e#4757#4758#0" expanded="true" />
+                    <element signature="e#4814#4815#0" expanded="true" />
+                    <element signature="e#4854#4855#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Session.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/Session.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="227">
+                  <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -159,10 +241,26 @@
           <file leaf-file-name="LoanBrokerFrame.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="431">
-                  <caret line="117" column="80" lean-forward="false" selection-start-line="117" selection-start-column="74" selection-end-line="117" selection-end-column="80" />
+                <state relative-caret-position="432">
+                  <caret line="107" column="29" lean-forward="false" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoanBrokerApplicationGateway.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBrokerApplicationGateway.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="269">
+                  <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1338#1339#0" expanded="true" />
+                    <element signature="e#1365#1366#0" expanded="true" />
+                    <element signature="e#2464#2465#0" expanded="true" />
+                    <element signature="e#2491#2492#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -205,7 +303,14 @@
       <find>onBankInterestRequestReceived</find>
       <find>bankIntRq</find>
       <find>loanRq</find>
+      <find>AwaitReply</find>
+      <find>getJMSCorrelationID</find>
+      <find>getJMSCorrelation</find>
+      <find>sender.send(</find>
     </findStrings>
+    <dirStrings>
+      <dir>E:\Github\S6-DPI\DPI\src</dir>
+    </dirStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -228,7 +333,6 @@
         <option value="$PROJECT_DIR$/src/model/loan/LoanRequest.java" />
         <option value="$PROJECT_DIR$/src/model/bank/BankInterestReply.java" />
         <option value="$PROJECT_DIR$/src/model/loan/LoanReply.java" />
-        <option value="$PROJECT_DIR$/src/model/bank/BankInterestRequest.java" />
         <option value="$PROJECT_DIR$/src/JMS/Communicator.java" />
         <option value="$PROJECT_DIR$/src/JMS/MessageSenderGateway.java" />
         <option value="$PROJECT_DIR$/src/JMS/Listener.java" />
@@ -239,11 +343,12 @@
         <option value="$PROJECT_DIR$/src/JMS/LoanBankApplicationGateway.java" />
         <option value="$PROJECT_DIR$/src/loanclient/LoanClientFrame.java" />
         <option value="$PROJECT_DIR$/src/bank/JMSBankFrame.java" />
+        <option value="$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java" />
+        <option value="$PROJECT_DIR$/src/model/bank/BankInterestRequest.java" />
         <option value="$PROJECT_DIR$/src/Gateway/LoanBankApplicationGateway.java" />
+        <option value="$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java" />
         <option value="$PROJECT_DIR$/src/Gateway/LoanBrokerApplicationGateway.java" />
         <option value="$PROJECT_DIR$/src/Gateway/LoanClientApplicationGateway.java" />
-        <option value="$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java" />
-        <option value="$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java" />
       </list>
     </option>
   </component>
@@ -611,12 +716,12 @@
       <workItem from="1521619037735" duration="200000" />
       <workItem from="1521659048193" duration="398000" />
       <workItem from="1521706802059" duration="564000" />
-      <workItem from="1522062924118" duration="5715000" />
+      <workItem from="1522062924118" duration="11240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38724000" />
+    <option name="totallyTimeSpent" value="44249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -643,7 +748,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41675505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -671,31 +776,55 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java</url>
+          <url>file://$PROJECT_DIR$/src/Gateway/LoanClientApplicationGateway.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/LoanBankApplicationGateway.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/LoanBankApplicationGateway.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/LoanBrokerApplicationGateway.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java</url>
           <line>75</line>
           <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java</url>
-          <line>149</line>
-          <properties />
-          <option name="timeStamp" value="32" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -704,27 +833,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/loan/LoanRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1602">
@@ -922,20 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/MessageListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -945,25 +1039,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JMS/Communicator.java" />
     <entry file="file://$PROJECT_DIR$/src/JMS/Listener.java" />
-    <entry file="file://$PROJECT_DIR$/src/messaging/requestreply/RequestReply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding>
-            <element signature="e#838#839#0" expanded="false" />
-            <element signature="e#857#858#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="104" column="12" lean-forward="true" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/loanbroker/JListLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -980,32 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBankApplicationGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="117" column="80" lean-forward="false" selection-start-line="117" selection-start-column="74" selection-end-line="117" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gateway/LoanClientApplicationGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/JMSException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1014,47 +1063,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBrokerApplicationGateway.java">
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/javax/jms/Session.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="44" column="51" lean-forward="true" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+        <state relative-caret-position="227">
+          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messaging/requestreply/RequestReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/command/ActiveMQDestination.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bank/JMSBankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="125" column="36" lean-forward="false" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+          <folding>
+            <element signature="e#4291#4292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/command/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding>
+            <element signature="e#10066#10067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/activemq-all-5.15.3.jar!/org/apache/activemq/command/ActiveMQMessage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding>
+            <element signature="e#4321#4322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bank/BankInterestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/loanbroker/LoanBrokerFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="107" column="29" lean-forward="false" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2377#2378#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gateway/MessageReceiverGateway.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="612">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
-            <element signature="e#4164#4165#0" expanded="true" />
-            <element signature="e#4194#4195#0" expanded="true" />
-            <element signature="e#4240#4241#0" expanded="true" />
-            <element signature="e#4278#4279#0" expanded="true" />
-            <element signature="e#4326#4327#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
-            <element signature="e#4551#4552#0" expanded="true" />
-            <element signature="e#4584#4585#0" expanded="true" />
-            <element signature="e#4640#4641#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#4719#4720#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4834#4835#0" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4925#4926#0" expanded="true" />
-            <element signature="e#4998#4999#0" expanded="true" />
-            <element signature="e#5058#5059#0" expanded="true" />
-            <element signature="e#5102#5103#0" expanded="true" />
-            <element signature="e#5133#5134#0" expanded="true" />
-            <element signature="e#5190#5191#0" expanded="true" />
-            <element signature="e#5230#5231#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#4020#4021#0" expanded="true" />
+            <element signature="e#4050#4051#0" expanded="true" />
+            <element signature="e#4096#4097#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
+            <element signature="e#4175#4176#0" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4264#4265#0" expanded="true" />
+            <element signature="e#4308#4309#0" expanded="true" />
+            <element signature="e#4343#4344#0" expanded="true" />
+            <element signature="e#4373#4374#0" expanded="true" />
+            <element signature="e#4420#4421#0" expanded="true" />
+            <element signature="e#4458#4459#0" expanded="true" />
+            <element signature="e#4508#4509#0" expanded="true" />
+            <element signature="e#4549#4550#0" expanded="true" />
+            <element signature="e#4622#4623#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#4726#4727#0" expanded="true" />
+            <element signature="e#4757#4758#0" expanded="true" />
+            <element signature="e#4814#4815#0" expanded="true" />
+            <element signature="e#4854#4855#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1062,11 +1180,41 @@
     <entry file="file://$PROJECT_DIR$/src/Gateway/MessageSenderGateway.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding>
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBankApplicationGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gateway/LoanBrokerApplicationGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1338#1339#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gateway/LoanClientApplicationGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,12 +7,15 @@ import org.apache.activemq.command.ActiveMQObjectMessage;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
+import java.util.UUID;
 
 public abstract class LoanClientApplicationGateway {
     public void ApplyForLoan(LoanRequest loanRq) {
-        MessageSenderGateway sender = new MessageSenderGateway("LoanRequest", "LoanRequest");
-        MessageReceiverGateway receiver = sender.send(loanRq);
-        receiver.AwaitReply(new MessageListener() {
+        MessageSenderGateway sender = new MessageSenderGateway("LoanRequest");
+        String correlationID = UUID.randomUUID().toString();
+                sender.send(loanRq,correlationID);
+        MessageReceiverGateway receiver = new MessageReceiverGateway(correlationID);
+        receiver.awaitReply(new MessageListener() {
             @Override
             public void onMessage(Message message) {
                 try {

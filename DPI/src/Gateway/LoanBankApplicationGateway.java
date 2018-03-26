@@ -16,14 +16,15 @@ public abstract class LoanBankApplicationGateway {
     private HashMap<String, Destination> Clients = new HashMap<>();
 
     public void listenForBankInterestRequest() {
-        MessageReceiverGateway receiver = new MessageReceiverGateway("BankInterestRequest", "BankInterestRequest");
+        MessageReceiverGateway receiver = new MessageReceiverGateway("BankInterestRequest");
         receiver.startConnection(new MessageListener() {
             @Override
             public void onMessage(Message message) {
                 try {
                     ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) message;
                     BankInterestRequest bankIntRq = (BankInterestRequest) msgObject.getObject();
-                    bankIntRq.setReplyDestination(message.getJMSReplyTo());
+                    System.out.println("CorrelationID:" +message.getJMSCorrelationID());
+                    bankIntRq.setReplyDestination(message.getJMSCorrelationID());
                     onBankInterestRequestReceived(bankIntRq);
                 } catch (JMSException e) {
                     e.printStackTrace();
@@ -35,7 +36,7 @@ public abstract class LoanBankApplicationGateway {
     public void onBankInterestRequestReceived(BankInterestRequest bankRq) {}
 
     public void replyLoanRequest(RequestReply rr) {
-        MessageSenderGateway sender = new MessageSenderGateway("BankInterestReply",((BankInterestRequest) rr.getRequest()).getReplyDestination());
+        MessageSenderGateway sender = new MessageSenderGateway(((BankInterestRequest) rr.getRequest()).getReplyDestination());
         sender.send((BankInterestReply)rr.getReply());
     }
 }

@@ -11,13 +11,14 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import java.util.HashMap;
+import java.util.UUID;
 
 public abstract class LoanBrokerApplicationGateway {
 
     private HashMap<String, Destination> Clients = new HashMap<>();
 
     public void listenForLoanRequests() {
-        MessageReceiverGateway receiver = new MessageReceiverGateway("LoanRequest", "LoanRequest");
+        MessageReceiverGateway receiver = new MessageReceiverGateway("LoanRequest");
         receiver.startConnection(new MessageListener() {
             @Override
             public void onMessage(Message message) {
@@ -25,7 +26,7 @@ public abstract class LoanBrokerApplicationGateway {
                     ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) message;
                     LoanRequest loanRq = (LoanRequest) msgObject.getObject();
                     BankInterestRequest bankIntRq = onLoanRequestReceieved(loanRq);
-                    requestBankInterest(loanRq, bankIntRq, message.getJMSReplyTo());
+                    requestBankInterest(loanRq, bankIntRq, message.getJMSCorrelationID());
                 } catch (JMSException e) {
                     e.printStackTrace();
                 }
@@ -38,11 +39,13 @@ public abstract class LoanBrokerApplicationGateway {
         return null;
     }
 
-    public void requestBankInterest(LoanRequest loanRq, BankInterestRequest bankIntRq, Destination replyDestination) {
-        MessageSenderGateway sender = new MessageSenderGateway("BankInterestRequest", "BankInterestRequest");
-        MessageReceiverGateway receiver = sender.send(bankIntRq);
+    public void requestBankInterest(LoanRequest loanRq, BankInterestRequest bankIntRq, String replyDestination) {
+        MessageSenderGateway sender = new MessageSenderGateway( "BankInterestRequest");
+        String correlationID = UUID.randomUUID().toString();
+        sender.send(bankIntRq, correlationID);
+        MessageReceiverGateway receiver = new MessageReceiverGateway(correlationID);
 
-        receiver.AwaitReply(new MessageListener() {
+        receiver.awaitReply(new MessageListener() {
             @Override
             public void onMessage(Message message) {
                 try {
@@ -61,8 +64,8 @@ public abstract class LoanBrokerApplicationGateway {
         return null;
     }
 
-    public void replyLoanRequest(LoanReply loanReply, Destination replyDestination) {
-        MessageSenderGateway sender = new MessageSenderGateway("LoanReply", replyDestination);
+    public void replyLoanRequest(LoanReply loanReply, String replyDestination) {
+        MessageSenderGateway sender = new MessageSenderGateway(replyDestination);
         sender.send(loanReply);
         System.out.println(loanReply);
     }

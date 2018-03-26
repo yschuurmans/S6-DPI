@@ -12,7 +12,7 @@ public class BankInterestRequest implements Serializable{
 
     private int amount; // the requested loan amount
     private int time; // the requested loan period
-    private Destination replyDestination;
+    private String replyDestination;
 
     public BankInterestRequest() {
         super();
@@ -43,11 +43,11 @@ public class BankInterestRequest implements Serializable{
         this.time = time;
     }
 
-    public Destination getReplyDestination() {
+    public String getReplyDestination() {
         return replyDestination;
     }
 
-    public void setReplyDestination(Destination replyDestination) {
+    public void setReplyDestination(String replyDestination) {
         this.replyDestination = replyDestination;
     }
 
