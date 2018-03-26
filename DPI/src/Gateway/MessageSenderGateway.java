@@ -19,7 +19,6 @@ public class MessageSenderGateway {
     MessageProducer producer; // for sending messages
 
 
-
 //    MessageConsumer consumer;
 //
 //    Destination replyTo;
@@ -28,20 +27,23 @@ public class MessageSenderGateway {
         this.channel = channel;
         this.destination = destination;
     }
+
     public MessageSenderGateway(String channel, String destinationString) {
         this.channel = channel;
         this.destination = JNDILookup(destinationString, channel);
     }
 
     public MessageReceiverGateway send(Serializable message) {
+        return send(message, null);
+    }
+
+    public MessageReceiverGateway send(Serializable message, MessageReceiverGateway customReceiver) {
         MessageReceiverGateway receiever = new MessageReceiverGateway();
         try {
             Properties props = new Properties();
             props.setProperty(Context.INITIAL_CONTEXT_FACTORY, "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
             props.setProperty(Context.PROVIDER_URL, "tcp://localhost:61616");
 
-            // connect to the Destination called “myFirstChannel”
-            // queue or topic: “queue.myFirstDestination” or “topic.myFirstDestination”
             props.put(("queue." + channel), channel);
 
             Context jndiContext = new InitialContext(props);
@@ -56,13 +58,18 @@ public class MessageSenderGateway {
             // create a text message
             Message msg = session.createObjectMessage(message);
 
-            receiever.setConnection(connection);
-            receiever.setSession(session);
-            receiever.setReceiveDestination(session.createTemporaryQueue());
-            msg.setJMSReplyTo(receiever.getReceiveDestination());
-            producer.send(msg);
-
-            return receiever;//.replace(":", "L").replace("-","D");//.substring(0, msg.getJMSMessageID().lastIndexOf("-"));
+            if (customReceiver == null) {
+                receiever.setConnection(connection);
+                receiever.setSession(session);
+                receiever.setReceiveDestination(session.createTemporaryQueue());
+                msg.setJMSReplyTo(receiever.getReceiveDestination());
+                producer.send(msg);
+                return receiever;
+            } else {
+                msg.setJMSReplyTo(customReceiver.getReceiveDestination());
+                producer.send(msg);
+                return customReceiver;
+            }
         } catch (NamingException | JMSException e) {
             e.printStackTrace();
         }

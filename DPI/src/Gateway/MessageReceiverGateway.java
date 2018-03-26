@@ -31,11 +31,10 @@ public class MessageReceiverGateway {
         try {
             connection.start();
             consumer = session.createConsumer(receiveDestination);
-            CreateListener(listener, consumer, true);
+            CreateListener(listener, consumer, 1);
         } catch (JMSException e) {
             e.printStackTrace();
         }
-
     }
 
     public void startConnection(MessageListener listener) {
@@ -67,19 +66,21 @@ public class MessageReceiverGateway {
             e.printStackTrace();
         }
 
-        CreateListener(listener, consumer, false);
+        CreateListener(listener, consumer, 0);
 
     }
 
-    private static void CreateListener(MessageListener listener, MessageConsumer consumer, boolean temporaryListener) {
+    private static void CreateListener(MessageListener listener, MessageConsumer consumer, int expectedReplyCount) {
         try {
             if (listener != null)
                 consumer.setMessageListener(new MessageListener() {
+                    private int replyCount;
                     @Override
                     public void onMessage(Message message) {
                         try {
                             listener.onMessage(message);
-                            if (temporaryListener)
+                            replyCount++;
+                            if (expectedReplyCount>0&& replyCount >= expectedReplyCount)
                                 consumer.close();
                         } catch (JMSException e) {
                             e.printStackTrace();
@@ -88,12 +89,13 @@ public class MessageReceiverGateway {
                 });
             else {
                 consumer.setMessageListener(new MessageListener() {
-
+                    private int replyCount;
                     @Override
                     public void onMessage(Message msg) {
                         try {
                             System.out.println("received message: " + msg);
-                            if (temporaryListener)
+                            replyCount++;
+                            if (expectedReplyCount>0&& replyCount >= expectedReplyCount)
                                 consumer.close();
                         } catch (JMSException e) {
                             e.printStackTrace();
