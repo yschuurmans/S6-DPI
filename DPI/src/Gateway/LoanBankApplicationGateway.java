@@ -15,8 +15,8 @@ public abstract class LoanBankApplicationGateway {
 
     private HashMap<String, Destination> Clients = new HashMap<>();
 
-    public void listenForBankInterestRequest() {
-        MessageReceiverGateway receiver = new MessageReceiverGateway("BankInterestRequest");
+    public void listenForBankInterestRequest(String bankName) {
+        MessageReceiverGateway receiver = new MessageReceiverGateway("BankInterestRequest_"+bankName);
         receiver.startConnection(new MessageListener() {
             @Override
             public void onMessage(Message message) {
