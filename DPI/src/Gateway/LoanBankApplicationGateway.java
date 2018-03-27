@@ -37,6 +37,6 @@ public abstract class LoanBankApplicationGateway {
 
     public void replyLoanRequest(RequestReply rr) {
         MessageSenderGateway sender = new MessageSenderGateway(((BankInterestRequest) rr.getRequest()).getReplyDestination());
-        sender.send((BankInterestReply)rr.getReply());
+        sender.send((BankInterestReply)rr.getReply(),((BankInterestRequest) rr.getRequest()).getReplyDestination());
     }
 }

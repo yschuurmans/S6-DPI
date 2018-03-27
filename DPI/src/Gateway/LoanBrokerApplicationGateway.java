@@ -44,14 +44,28 @@ public abstract class LoanBrokerApplicationGateway {
     }
 
     public void requestBankInterest(LoanRequest loanRq, BankInterestRequest bankIntRq, String replyDestination) {
-        HashMap<String,BankInterestReply> bankReplies = new HashMap<>();
+        HashMap<String, BankInterestReply> bankReplies = new HashMap<>();
+        HashMap<String, String> bankKeys = new HashMap<>();
+
+        for (String s : JMSBankStarter.BanksToStart) {
+            bankKeys.put(s, UUID.randomUUID().toString());
+        }
+
+        for (int i = 0; i < JMSBankStarter.BanksToStart.length; i++) {
+        }
+
         MessageListener listener = new MessageListener() {
             @Override
             public void onMessage(Message message) {
                 try {
                     ActiveMQObjectMessage msgObject = (ActiveMQObjectMessage) message;
                     BankInterestReply bankIntRp = (BankInterestReply) msgObject.getObject();
-                    bankReplies.put(bankIntRp.getQuoteId(), bankIntRp);
+                    System.out.println(message.getJMSCorrelationID() + " : " + bankIntRp.toString());
+                    if(bankKeys.containsKey(bankIntRp.getQuoteId()) && bankKeys.get(bankIntRp.getQuoteId()).equals(((ActiveMQObjectMessage) message).getCorrelationId())) {
+                        bankReplies.put(message.getJMSCorrelationID(), bankIntRp);
+                        if (bankReplies.size() >= JMSBankStarter.BanksToStart.length)
+                            returnBestToClient(bankReplies, loanRq, replyDestination);
+                    }
 
                 } catch (JMSException e) {
                     e.printStackTrace();
@@ -61,23 +75,18 @@ public abstract class LoanBrokerApplicationGateway {
 
 
         for (String b : JMSBankStarter.BanksToStart) {
-            String correlationID = UUID.randomUUID().toString();
+            String correlationID = bankKeys.get(b);
             MessageSenderGateway sender = new MessageSenderGateway("BankInterestRequest_" + b);
             sender.send(bankIntRq, correlationID);
             MessageReceiverGateway receiver = new MessageReceiverGateway(correlationID);
-            receiver.startConnection(JMSBankStarter.BanksToStart.length, ;
+            receiver.awaitReply(listener);
         }
-
-
-
-
-
     }
 
-    private void returnBestToClient(List<BankInterestReply> bankReplies,LoanRequest loanRq, String replyDestination) {
+    private void returnBestToClient(HashMap<String, BankInterestReply> bankReplies, LoanRequest loanRq, String replyDestination) {
         double lowestInterest = Double.MAX_VALUE;
         BankInterestReply lowestReply = new BankInterestReply();
-        for (BankInterestReply bankReply : bankReplies) {
+        for (BankInterestReply bankReply : bankReplies.values()) {
             if (bankReply.getInterest() < lowestInterest) {
                 lowestReply = bankReply;
                 lowestInterest = bankReply.getInterest();

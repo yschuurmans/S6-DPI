@@ -17,6 +17,7 @@ public class MessageSenderGateway {
     Connection connection;
 
     MessageProducer producer; // for sending messages
+    private String correlationID;
 
 
 //    MessageConsumer consumer;
@@ -52,8 +53,8 @@ public class MessageSenderGateway {
             producer = session.createProducer(destination);
             // create a text message
             Message msg = session.createObjectMessage(message);
-
-            if (false){//customReceiver == null) {
+            msg.setJMSCorrelationID(correlationID);
+            if (false) {//customReceiver == null) {
                 receiever.setConnection(connection);
                 receiever.setSession(session);
                 receiever.setReceiveDestination(session.createTemporaryQueue());
@@ -85,4 +86,7 @@ public class MessageSenderGateway {
     }
 
 
+    public void setCorrelationID(String correlationID) {
+        this.correlationID = correlationID;
+    }
 }
